@@ -14,4 +14,4 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: node app.js
+      - run: pm2 start node app.js
